@@ -1,0 +1,120 @@
+
+def contas():
+    escolha_da_materia = int(input("Digite o numero da materia que deseja calcular a media: "))
+
+    if escolha_da_materia == 1:
+        print("Insira suas notas de Banco de Dados")
+        p1 = float(input("Quanto tirou na P1?: "))
+        p2 = float(input("Quanto tirou na P2?: "))
+        p3 = float(input("Quanto tirou na P3?: "))
+        p4 = float(input("Quanto tirou na P4?: "))
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+
+        mT = (t1 + t2)/2
+        mP = (p1 + p2 + p3 + p4)/4
+        mF = 0.7*mP + 0.3*mT
+        
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+
+    elif escolha_da_materia == 2:
+        print("Insira suas notas de Microcontroladores")
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+        t3 = float(input("Quanto tirou no T3?: "))
+
+        mF = (t1*4 + t2*3 + t3*3)/10
+        
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+        
+
+    elif escolha_da_materia == 3:
+        print("Insira suas notas de Empreendedorismo")
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+        t3 = float(input("Quanto tirou no T3?: "))
+        t4 = float(input("Quanto tirou no T4?: "))
+
+        mF = (t1*2 + t2*2 + t3*3 + t4*3)/10
+        
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+
+    elif escolha_da_materia == 4:
+        print("Insira suas notas de Arquitetura de Software")
+        p1 = float(input("Quanto tirou na P1?: "))
+        p2 = float(input("Quanto tirou na P2?: "))
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+
+        mT = (t1 + t2)/2
+        mP = (p1*2 + p2*3)/5
+        mF = 0.5*mP + 0.5*mT
+        
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+
+    elif escolha_da_materia == 5:
+        print("Insira suas notas de Linguagens de programação 2")
+        p1 = float(input("Quanto tirou na P1?: "))
+        p2 = float(input("Quanto tirou na P2?: "))
+        p3 = float(input("Quanto tirou na P3?: "))
+        p4 = float(input("Quanto tirou na P4?: "))
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+
+        mT = (t1 + t2)/2
+        mP = ((2*(p1+p2)/2) + (3*(p3+p4)/2))/5
+        mF = 0.5*mP + 0.5*mT
+        
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+            
+    elif escolha_da_materia == 6:
+        print("Insira suas notas de Redes de Computadores")
+        p1 = float(input("Quanto tirou na P1?: "))
+        p2 = float(input("Quanto tirou na P2?: "))
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+        t3 = float(input("Quanto tirou no T3?: "))
+        t4 = float(input("Quanto tirou no T4?: "))
+
+        mT = (t1 + t2 + t3 + t4)/4
+        mP = (p1*2 + p2*3)/5
+        mF = 0.6*mP + 0.4*mT
+
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+
+    elif escolha_da_materia == 7:
+        print("Insira suas notas de Engenharia de Software")
+        p1 = float(input("Quanto tirou na P1?: "))
+        p2 = float(input("Quanto tirou na P2?: "))
+        t1 = float(input("Quanto tirou no T1?: "))
+        t2 = float(input("Quanto tirou no T2?: "))
+        t3 = float(input("Quanto tirou no T3?: "))
+        t4 = float(input("Quanto tirou no T4?: "))
+
+        mT = (t1 + t2 + t3 + t4)/4
+        mP = (p1*2 + p2*3)/5
+        mF = 0.6*mP + 0.4*mT
+
+        if mF >= 6:
+            return passou
+        else:
+            return naopassou
+
